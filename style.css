@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.nav_div {
+  padding: 2vh 2vh;
+  display: grid;
+  grid-template-columns: 10vw 10vw 70vw 10vw;
+  background-color: rgb(183, 218, 253);
+}
+
+.main_nav {
+  grid-row: 1;
+}
+
+.hire_btn {
+  background-color: rgba(182, 227, 255, 0.792);
+  border-style: solid;
+  border-radius: 2rem;
+  height: 2rem;
+  width: 9vw;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 17, 125, 0.87);
+}/*# sourceMappingURL=style.css.map */
