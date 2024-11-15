@@ -4,25 +4,78 @@
 }
 
 .nav_div {
-  padding: 2vh 2vh;
+  padding: 1.6rem;
   display: grid;
-  grid-template-columns: 10vw 10vw 70vw 10vw;
-  background-color: rgb(183, 218, 253);
+  grid-template-columns: 1fr 1fr 6fr 1fr;
+  line-height: 2.5rem;
+  background-color: #f8b0a9;
 }
 
 .main_nav {
   grid-row: 1;
+  font-family: "Avantgarde, TeX Gyre Adventor", "URW Gothic L", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 2vh;
+}
+
+body {
+  background-color: #fdf4f3;
 }
 
 .hire_btn {
-  background-color: rgba(182, 227, 255, 0.792);
   border-style: solid;
   border-radius: 2rem;
-  height: 2rem;
+  height: 2.5rem;
   width: 9vw;
+  background-color: #f4c2be;
+  font-family: "Impact", fantasy;
+  font-size: 1.4rem;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
-  color: rgba(0, 17, 125, 0.87);
+  color: #3e1411;
+}
+
+._home {
+  background-color: #fde5e3;
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  padding: 7rem;
+}
+
+._intro {
+  padding: 2rem;
+  font-size: 2.5rem;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+._img {
+  background-color: #e88981;
+  margin-left: 9rem;
+  margin-right: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+._details {
+  padding: 2rem;
+  font-size: 2.5rem;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+  .main_nav {
+    padding-right: 1rem;
+  }
+  .hire_btn {
+    height: 4.5rem;
+  }
+}
+.nav_div a:hover {
+  font-size: x-large;
 }/*# sourceMappingURL=style.css.map */
