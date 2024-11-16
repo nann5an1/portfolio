@@ -1,17 +1,16 @@
 *{
     padding: 0;
     margin: 0;
-    
+    max-width: 100%;
 }
 .nav_div{
     padding: 1.6rem;
+    position: sticky;
+    top: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 6fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr 6fr 1fr;
     line-height: 2.5rem;
-    // position: absolute;
-    // overflow:visible;
-    background-color: #f8b0a9;
-    
+    background-color: #223030;
 }
 .main_nav{
     grid-row: 1;
@@ -19,10 +18,11 @@
     font-weight: bold;
     font-size: 1.2rem;
     margin-top: 2vh;
+   
 }
 
 body{
-    background-color: #fdf4f3;
+    background-color: #EFEFE9;
 }
 
 .hire_btn{
@@ -30,7 +30,7 @@ body{
     border-radius: 2rem;
     height: 2.5rem;
     width: 9vw;
-    background-color: #f4c2be;
+    background-color: #EFEFE9;;
     font-family: "Impact", fantasy;
     font-size: 1.4rem;
     font-weight: normal;
@@ -40,11 +40,15 @@ body{
 
 a{
     text-decoration: none;
+    color: #EFEFE9;
+}
+button a{
+    text-decoration: none;
     color: #3e1411;
 }
 
 ._home{
-    background-color: #fde5e3;
+    background-color: #EFEFE9;
     display: grid;
     grid-template-columns: 5fr 3fr;
     padding: 7rem;
@@ -56,7 +60,7 @@ a{
     font-family: "Trebuchet MS", sans-serif;
 }
 ._img{
-    background-color: #e88981;
+    // background-color: #e88981;
     margin-left: 9rem;
     margin-right: 2rem;
     padding: 2rem;
@@ -67,6 +71,88 @@ a{
     padding: 2rem;
     font-size: 2.5rem;
     font-family: "Trebuchet MS", sans-serif;
+    
+}
+._intro h1::after {
+    content: "";
+    width: 4px;
+    height: 25px;
+    background-color: #3e1411;
+    display: inline-block;
+    animation: blinking_cursor 1.5s steps(2) infinite;
+}
+
+._info_container{
+    background-color: #223030;
+    h3{
+        font-weight: bold;
+    }
+    min-height: 30rem;
+}
+
+._info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 5rem;
+    column-gap: 8rem;
+    max-height: 20rem;
+    // background-color: #223030;
+    color: #fffffd;
+    margin: 0;
+    h5{
+        padding-top: 1rem;
+    }
+}
+
+
+%info_header{
+    background-color: #223030;
+    color: #EFEFE9;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+._skills_img{
+    // background-color: #fde5e3;
+    padding-left: 35rem;
+    max-height: 15rem;
+}
+
+._info_container h3{
+    @extend %info_header;
+}
+
+._cert_div{
+    @extend %info_header;
+    background-color: #EFEFE9;
+    color: #3e1411;
+    h3{
+        font-weight: bold;
+    }
+}
+._certs{
+    min-height: 25rem;
+}
+
+._project_div{
+    @extend %info_header;
+    color: white;
+    h3{
+        font-weight: bold;
+    }
+}
+._project{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: #3e1411;
+}
+
+._project_tab{
+    padding: 5rem;
+    background-color: #e48e87;
+    margin-left: 9rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -77,6 +163,14 @@ a{
         height: 4.5rem;
     }
 }
+
+
+@keyframes blinking_cursor {
+    0% {
+        opacity: 0;
+    }
+}
+
 
 .nav_div a:hover{
     font-size: x-large;
