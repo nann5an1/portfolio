@@ -11,7 +11,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 2fr 6fr 1fr;
   line-height: 2.5rem;
-  background-color: #223030;
+  background-color: #C2C5AA;
 }
 
 .main_nav {
@@ -41,19 +41,19 @@ body {
 
 a {
   text-decoration: none;
-  color: #EFEFE9;
+  color: #333D29;
 }
 
 button a {
   text-decoration: none;
-  color: #3e1411;
+  color: #333D29;
 }
 
 ._home {
   background-color: #EFEFE9;
   display: grid;
   grid-template-columns: 5fr 3fr;
-  padding: 10rem;
+  padding: 15rem 10rem 10rem 10rem;
 }
 
 ._intro {
